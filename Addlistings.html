@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorm Finder - Add Listing</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images//Index_img/favicon.png">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/mmenu.css">
+    <link rel="stylesheet" href="css/style.css" id="colors">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+    <div id="main_wrapper">
+        <!--Header-->
+        <header id="header_part" class="fullwidth">
+            <div id="header">
+                <div class="container">
+                    <div class="utf_left_side">
+                        <div id="logo"> <a href="https://mywebsitesbucket.s3.us-west-1.amazonaws.com/DormFinder/Index.html"><img src="images/Index_img/logo2.png" alt=""></a> </div>
+                        <div class="mmenu-trigger">
+                            <button class="hamburger utfbutton_collapse" type="button">
+                                <span class="utf_inner_button_box">
+                                    <span class="utf_inner_section"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Nav Bar-->
+                        <nav id="navigation" class="style_one">
+                            <ul id="responsive">
+                                <li>
+                                    <a class="#" href="Index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="Listings.html">Listings</a>
+                                </li>
+                                <li>
+                                    <a href="Blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="About_Us.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="FAQ.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!--Add Listing-->
+                    <div class="utf_right_side">
+                        <div class="header_widget"> <a href="#dialog_signin_part" class="button border sign-in popup-with-zoom-anim"><i class="fa fa-sign-in"></i> Sign In</a> <a href="Addlistings.html" class="button border with-icon"><i class="sl sl-icon-user"></i> Become a host</a></div>
+                    </div>
+                    <!--Register-->
+                    <div id="dialog_signin_part" class="zoom-anim-dialog mfp-hide">
+                        <div class="small_dialog_header">
+                            <h3>Sign In</h3>
+                        </div>
+                        <div class="utf_signin_form style_one">
+                            <ul class="utf_tabs_nav">
+                                <li class=""><a href="#tab1">Log In</a></li>
+                                <li><a href="">Register</a></li>
+                            </ul>
+                            <div class="tab_container alt">
+                                <div class="tab_content" id="tab1" style="display:none;">
+                                    <form method="post" class="login">
+                                        <p class="utf_row_form utf_form_wide_block">
+                                            <label for="username">
+                                                <input type="text" class="input-text" name="username" id="username" value="" placeholder="Username" />
+                                            </label>
+                                        </p>
+                                        <p class="utf_row_form utf_form_wide_block">
+                                            <label for="password">
+                                                <input class="input-text" type="password" name="password" id="password" placeholder="Password" />
+                                            </label>
+                                        </p>
+                                        <div class="utf_row_form utf_form_wide_block form_forgot_part">
+                                            <span class="lost_password fl_left"> <a href="javascript:void(0);">Forgot Password?</a> </span>
+                                            <div class="checkboxes fl_right">
+                                                <input id="remember-me" type="checkbox" name="check">
+                                                <label for="remember-me">Remember Me</label>
+                                            </div>
+                                        </div>
+                                        <div class="utf_row_form">
+                                            <input type="submit" class="button border margin-top-5" name="login" value="Login" />
+                                        </div>
+                                        <div class="utf-login_with my-3">
+                                            <span class="txt">Or Login in With</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-6">
+                                                <a href="javascript:void(0);" class="social_bt facebook_btn mb-0"><i class="fa fa-facebook"></i> Facebook</a>
+                                            </div>
+                                            <div class="col-md-6 col-6">
+                                                <a href="javascript:void(0);" class="social_bt google_btn mb-0"><i class="fa fa-google"></i> Google</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab_content" id="tab2" style="display:none;">
+                                    <form method="post" class="register">
+                                        <p class="utf_row_form utf_form_wide_block">
+                                            <label for="username2">
+                                                <input type="text" class="input-text" name="username" id="username2" value="" placeholder="Username" />
+                                            </label>
+                                        </p>
+                                        <p class="utf_row_form utf_form_wide_block">
+                                            <label for="email2">
+                                                <input type="text" class="input-text" name="email" id="email2" value="" placeholder="Email" />
+                                            </label>
+                                        </p>
+                                        <p class="utf_row_form utf_form_wide_block">
+                                            <label for="password1">
+                                                <input class="input-text" type="password" name="password1" id="password1" placeholder="Password" />
+                                            </label>
+                                        </p>
+                                        <p class="utf_row_form utf_form_wide_block">
+                                            <label for="password2">
+                                                <input class="input-text" type="password" name="password2" id="password2" placeholder="Confirm Password" />
+                                            </label>
+                                        </p>
+                                        <input type="submit" class="button border fw margin-top-10" name="register" value="Register" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="clearfix"></div>
+        <!-- End of Header / Nav Bar-->
+        <!--Body Start-->
+        <!--breadcrumbs-->
+        <div id="titlebar" class="gradient">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Add Listing</h2>
+                        <nav id="breadcrumbs">
+                            <ul>
+                                <li><a href="index_1.html">Home</a></li>
+                                <li>Add Listing</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Bread crumbs ends-->
+
+        <div class="container margin-bottom-75">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="utf_add_listing_part">
+                        <div class="add_utf_listing_section">
+                            <div class="utf_add_listing_part_headline_part">
+                                <h3><i class="sl sl-icon-user"></i> Have an Account?</h3>
+                            </div>
+                            <div class="row with-forms">
+                                <div class="col-md-12">
+                                    <div class="form-group lis-relative">
+                                        Sign in If you don’t have an account you can create one below by entering your email address/username. Your account details will be confirmed via email. <a href="Dashboard.html" class="">Sign in</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add_utf_listing_section margin-top-45">
+                            <div class="utf_add_listing_part_headline_part">
+                                <h3><i class="sl sl-icon-tag"></i> Describe your place</h3>
+                            </div>
+                            <div class="row with-forms">
+                                <div class="col-md-6">
+                                    <h5>What kind of place are you renting?</h5>
+                                    <div class="intro-search-field utf-chosen-cat-single">
+                                        <select class="selectpicker default" data-selected-text-format="count" data-size="7" title="">
+                                            <option>Apartment</option>
+                                            <option>Secondary Unit</option>
+                                            <option>House</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row with-forms">
+                                <div class="col-md-6">
+                                    <h5>Which of these best describes your place? </h5>
+                                    <div class="intro-search-field utf-chosen-cat-single">
+                                        <select class="selectpicker default" data-selected-text-format="count" data-size="7" title="">
+                                            <option>Rental Unit</option>
+                                            <option>Condo</option>
+                                            <option>Loft</option>
+                                            <option>Serviced Apartment</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row with-forms">
+                                <div class="col-md-6">
+                                    <h5>Room Types</h5>
+                                    <div class="intro-search-field utf-chosen-cat-single">
+                                        <select class="selectpicker default" data-selected-text-format="count" data-size="7" title="">
+                                            <option>Shared BedRoom</option>
+                                            <option>1 Bedroom</option>
+                                            <option>Co-Ed Room</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row with-forms">
+                                <div class="col-md-12">
+                                    <h5>What kind of space will guest have? </h5>
+                                    <input type="text" class="search-field" name="listing_title" id="listing_title" placeholder="An entire place, A private room, A shared room " value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add_utf_listing_section margin-top-45">
+                            <div class="utf_add_listing_part_headline_part">
+                                <h3><i class="sl sl-icon-map"></i> Location</h3>
+                            </div>
+                            <div class="utf_submit_section">
+                                <div class="row with-forms">
+                                    <div class="col-md-6">
+                                        <h5>Address</h5>
+                                        <input type="text" class="input-text" name="address" id="address" placeholder="Address" value="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5>State</h5>
+                                        <div class="intro-search-field utf-chosen-cat-single">
+                                            <select class="selectpicker default" data-selected-text-format="count" data-size="7" title="California">
+                                                <option>Alabama</option>
+                                                <option>Alaska</option>
+                                                <option>Arizona</option>
+                                                <option>Arkansas</option>
+                                                <option>California</option>
+                                                <option>Colorado</option>
+                                                <option>Connecticut</option>
+                                                <option>Delaware</option>
+                                                <option>Florida</option>
+                                                <option>Georgia</option>
+                                                <option>Hawaii</option>
+                                                <option>Idaho</option>
+                                                <option>Illinois</option>
+                                                <option>Indiana</option>
+                                                <option>Iowa</option>
+                                                <option>Kansas</option>
+                                                <option>Kentucky</option>
+                                                <option>Louisiana</option>
+                                                <option>Maine</option>
+                                                <option>Maryland</option>
+                                                <option>Massachusetts</option>
+                                                <option>Michigan</option>
+                                                <option>Minnesota</option>
+                                                <option>Mississippi</option>
+                                                <option>Missouri</option>
+                                                <option>Montana</option>
+                                                <option>Nebraska</option>
+                                                <option>Nevada</option>
+                                                <option>New Hampshire</option>
+                                                <option>New Jersey</option>
+                                                <option>New Mexico</option>
+                                                <option>New York</option>
+                                                <option>North Carolina</option>
+                                                <option>North Dakota</option>
+                                                <option>Ohio</option>
+                                                <option>Oklahoma</option>
+                                                <option>Oregon</option>
+                                                <option>Pennsylvania</option>
+                                                <option>Rhode Island</option>
+                                                <option>South Carolina</option>
+                                                <option>South Dakota</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Utah</option>
+                                                <option>Vermont</option>
+                                                <option>Virginia</option>
+                                                <option>Washington</option>
+                                                <option>West Virginia</option>
+                                                <option>Wisconsin</option>
+                                                <option>Wyoming</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row with-forms">
+                                            <div class="col-md-6">
+                                                <h5>City</h5>
+                                                <input type="text" class="input-text" placeholder="Los Angeles" value="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>Zip Code</h5>
+                                                <input type="text" class="input-text" placeholder="Zip Code" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add_utf_listing_section margin-top-45">
+                            <div class="utf_add_listing_part_headline_part">
+                                <h3><i class="sl sl-icon-picture"></i> Upload your Room Photos</h3>
+                            </div>
+                            <div class="row with-forms">
+                                <div class="utf_submit_section col-md-4">
+                                    <h4>Cover Photo</h4>
+                                    <form action="file-upload" class="dropzone"></form>
+                                </div>
+                                <div class="utf_submit_section col-md-4">
+                                    <h4>Gallery Images</h4>
+                                    <form action="file-upload" class="dropzone"></form>
+                                </div>
+                                <div class="utf_submit_section col-md-4">
+                                    <h4>More Images</h4>
+                                    <form action="file-upload" class="dropzone"></form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add_utf_listing_section margin-top-45">
+                            <div class="utf_add_listing_part_headline_part">
+                                <h3><i class="sl sl-icon-list"></i> Room & Description</h3>
+                            </div>
+                            <div class="row with-forms">
+                                <div class="col-md-6">
+                                    <h5>Title</h5>
+                                    <input type="text" placeholder="Lovely 1 bedroom rental unit in Pomona ">
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Sub-Title</h5>
+                                    <input type="text" placeholder="Fully Furnished 1 bedroom">
+                                </div>
+                                <div class="col-md-12">
+                                    <h5>Description</h5>
+                                    <textarea name="summary" cols="40" rows="3" id="description" placeholder="Description ( Max 1000 Character)" spellcheck="true"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add_utf_listing_section margin-top-45">
+                            <div class="utf_add_listing_part_headline_part">
+                                <h3><i class="sl sl-icon-home"></i> Amenities</h3>
+                            </div>
+                            <div class="checkboxes in-row amenities_checkbox">
+                                <ul>
+                                    <li>
+                                        <input id="check-a" type="checkbox" name="check">
+                                        <label for="check-a">Car Parking</label>
+                                    </li>
+
+                                    <li>
+                                        <input id="check-c" type="checkbox" name="check">
+                                        <label for="check-c">Street Parking</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-d" type="checkbox" name="check">
+                                        <label for="check-d">Elevator in Building</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-e" type="checkbox" name="check">
+                                        <label for="check-e">AC/Heater</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-f" type="checkbox" name="check">
+                                        <label for="check-f">Indoor Washer/Dryer</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-g" type="checkbox" name="check">
+                                        <label for="check-g">Wireless Internet</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-h" type="checkbox" name="check">
+                                        <label for="check-h">TV</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-i" type="checkbox" name="check">
+                                        <label for="check-i">Full Kitchen</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-j" type="checkbox" name="check">
+                                        <label for="check-j">Backyard</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-k" type="checkbox" name="check">
+                                        <label for="check-k">Wheelchair Accessible</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="add_utf_listing_section margin-top-45">
+                            <div class="utf_add_listing_part_headline_part">
+                                <h3><i class="sl sl-icon-home"></i> Safety</h3>
+                            </div>
+                            <div class="checkboxes in-row amenities_checkbox">
+                                <ul>
+                                    <li>
+                                        <input id="check-a" type="checkbox" name="check">
+                                        <label for="check-a">Fire extinguisher</label>
+                                    </li>
+
+                                    <li>
+                                        <input id="check-c" type="checkbox" name="check">
+                                        <label for="check-c">Security Door/ Alarm</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-d" type="checkbox" name="check">
+                                        <label for="check-d">Surrounding Camera</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-e" type="checkbox" name="check">
+                                        <label for="check-e">Smoke detector</label>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="add_utf_listing_section margin-top-45">
+                            <div class="utf_add_listing_part_headline_part">
+                                <h3><i class="sl sl-icon-home"></i> Descirbe your place</h3>
+                            </div>
+                            <div class="checkboxes in-row amenities_checkbox">
+                                <ul>
+                                    <li>
+                                        <input id="check-a" type="checkbox" name="check">
+                                        <label for="check-a">Peaceful</label>
+                                    </li>
+
+                                    <li>
+                                        <input id="check-c" type="checkbox" name="check">
+                                        <label for="check-c">Spacious</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-d" type="checkbox" name="check">
+                                        <label for="check-d">Fully Furnished</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-e" type="checkbox" name="check">
+                                        <label for="check-e">Friendly Host</label>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="add_utf_listing_section margin-top-45">
+                            <div class="utf_add_listing_part_headline_part">
+                                <h3><i class="sl sl-icon-tag"></i>Pricing</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table id="utf_pricing_list_section">
+                                        <tbody class="ui-sortable">
+                                            <tr class="pricing-list-item pattern ui-sortable-handle">
+                                                <td>
+
+
+                                                    <div class="fm-input pricing-price">
+                                                        <i class="data-unit">$</i>
+                                                        <input type="text" placeholder="Price" data-unit="$">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a href="#" class="button preview"><i class="fa fa-arrow-circle-right"></i> Save & Preview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Body End-->
+        <!-- Footer Start -->
+        <div id="footer" class="footer_sticky_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <h4>My Account</h4>
+                        <ul class="social_footer_link">
+                            <li><a href="Dashboard.html">Dashboard</a></li>
+                            <li><a href="Dashboard_profile.html">Profile</a></li>
+                            <li><a href="Listings.html">Listing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <h4>Pages</h4>
+                        <ul class="social_footer_link">
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="HIW.html">How It Work</a></li>
+                            <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <h4>Help</h4>
+                        <ul class="social_footer_link">
+                            <li><a href="Sign_in.html">Sign In</a></li>
+                            <li><a href="Register.html">Register</a></li>
+                            <li><a href="Addlistings.html">Add Listing</a></li>
+                            <li><a href="Contact_Us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer_copyright_part">Copyright © 2022 All Rights Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+    <!-- Scripts -->
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/chosen.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/rangeslider.min.js"></script>
+    <script src="scripts/bootstrap-select.min.js"></script>
+    <script src="scripts/magnific-popup.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/mmenu.js"></script>
+    <script src="scripts/tooltips.min.js"></script>
+    <script src="scripts/color_switcher.js"></script>
+    <script src="scripts/jquery_custom.js"></script>
+    <script src="scripts/dropzone.js"></script>
+</body>
+</html>
