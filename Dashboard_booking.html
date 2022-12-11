@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorm Finder - Booking</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images//Index_img/favicon.png">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/mmenu.css">
+    <link rel="stylesheet" href="css/style.css" id="colors">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+    <div id="main_wrapper">
+
+        <!--DashBoard Header-->
+        <header id="header_part" class="fullwidth">
+            <div id="header">
+                <div class="container">
+                    <div class="utf_left_side">
+                        <div id="logo"> <a href="Index.html"><img src="images/Index_img/logo2.png" alt=""></a> </div>
+                        <div class="mmenu-trigger">
+                            <button class="hamburger utfbutton_collapse" type="button">
+                                <span class="utf_inner_button_box">
+                                    <span class="utf_inner_section"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Nav Bar-->
+                        <nav id="navigation" class="style_one">
+                            <ul id="responsive">
+                                <li>
+                                    <a class="#" href="Index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="Listings">Listings</a>
+                                </li>
+                                <li>
+                                    <a href="Blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="About_Us.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="FAQ.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!--Dashboard right side-->
+                    <div class="utf_right_side">
+                        <div class="header_widget">
+                            <div class="dashboard_header_button_item has-noti js-item-menu">
+                                <i class="sl sl-icon-bell"></i>
+                                <div class="dashboard_notifi_dropdown js-dropdown">
+                                    <div class="dashboard_notifi_title">
+                                        <p>You Have 2 Notifications</p>
+                                    </div>
+                                    <div class="dashboard_notifi_item">
+                                        <div class="bg-c1 red">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Your Listing <b>Pomona Apartment</b> Need to Approved!</p>
+                                            <span class="date">2 hours ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_notifi_item">
+                                        <div class="bg-c1 green">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>You Have 1 Unread Messages</p>
+                                            <span class="date">5 hours ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_notify_bottom text-center pad-tb-20">
+                                        <a href="#">View All Notification</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="utf_user_menu">
+                                <div class="utf_user_name"><span><img src="images/blog/mee.jpg" alt=""></span>Hi, Phone!</div>
+                                <ul>
+                                    <li><a href="Dashboard.html"><i class="sl sl-icon-layers"></i> Dashboard</a></li>
+                                    <li><a href="Dashboard_profile.html"><i class="sl sl-icon-user"></i> My Profile</a></li>
+                                    <li><a href="Dashboard_my_listing.html"><i class="sl sl-icon-list"></i> My Listing</a></li>
+                                    <li><a href="Dashboard_message.html"><i class="sl sl-icon-envelope-open"></i> Messages</a></li>
+                                    <li><a href="Dashboard_booking.html"><i class="sl sl-icon-docs"></i> Booking</a></li>
+                                    <li><a href="Index.html"><i class="sl sl-icon-power"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="clearfix"></div>
+        <!-- End of Header / Nav Bar-->
+        <!--Body Start-->
+        <div id="dashboard">
+            <a href="#" class="utf_dashboard_nav_responsive"><i class="fa fa-reorder"></i> Dashboard Sidebar Menu</a>
+            <!--Side Bar start-->
+            <div class="utf_dashboard_navigation js-scrollbar">
+                <div class="utf_dashboard_navigation_inner_block">
+                    <ul>
+                        <li><a href="Dashboard.html"><i class="sl sl-icon-layers"></i> Dashboard</a></li>
+                        <li><a href="Dashboard_addlisting.html"><i class="sl sl-icon-plus"></i> Add Listing</a></li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="sl sl-icon-layers"></i> My Listings</a>
+                            <ul>
+                                <li><a href="Dashboard_my_listing.html">Active <span class="nav-tag green">5</span></a></li>
+                                <li><a href="Dashboard_my_listing.html">Pending <span class="nav-tag yellow">2</span></a></li>
+                                <li><a href="Dashboard_my_listing.html">Expired <span class="nav-tag red">3</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="dashboard_booking.html"><i class="sl sl-icon-docs"></i> Bookings</a></li>
+                        <li><a href="Dashboard_message.html"><i class="sl sl-icon-envelope-open"></i> Messages</a></li>
+                        <li><a href="Dashboard_wallet.html"><i class="sl sl-icon-wallet"></i> Wallet</a></li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="sl sl-icon-star"></i> Reviews</a>
+                            <ul>
+                                <li><a href="Dashboard_visitorreview.html">Visitor Reviews <span class="nav-tag green">4</span></a></li>
+                                <li><a href="Dashboard_submitted_review.html">Submitted Reviews <span class="nav-tag yellow">3</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Dashboard_profile.html"><i class="sl sl-icon-user"></i> My Profile</a></li>
+                        <li><a href="Dashboard_Changepassword.html"><i class="sl sl-icon-key"></i> Change Password</a></li>
+                        <li><a href="Index.html"><i class="sl sl-icon-power"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Side Bar start-->
+            <div class="utf_dashboard_content">
+                <div id="titlebar" class="dashboard_gradient">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Bookings</h2>
+                            <nav id="breadcrumbs">
+                                <ul>
+                                    <li><a href="Index.html">Home</a></li>
+                                    <li><a href="Dashboard.html">Dashboard</a></li>
+                                    <li>Bookings</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="utf_dashboard_list_box margin-top-0">
+                            <div class="sort-by my_sort_by">
+                                <div class="utf_sort_by_select_item">
+                                    <select data-placeholder="All Listing" class="utf_chosen_select_single">
+                                        <option>All Listing</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <h4>Bookings Request</h4>
+                            <ul>
+                                <li class="utf_approved_booking_listing">
+                                    <div class="utf_list_box_listing_item bookings">
+                                        <div class="utf_list_box_listing_item-img"><img src="images/blog/commentpp1.jpg" alt=""></div>
+                                        <div class="utf_list_box_listing_item_content">
+                                            <div class="inner">
+                                                <h3>John Doe <span class="utf_booking_listing_status">Approved</span></h3>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Item:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li>Pomona 1Bed, 1Bath</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Start Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">18 November 2022 at 12:00 am</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>End Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">19 November 2023 at 12:00 pm</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Details:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">1 year lease</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Email Address:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">jdoe@gmail.com</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Phone Number:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">626-665-5694</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Price:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">$ 860/month</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="utf_approved_booking_listing">
+                                    <div class="utf_list_box_listing_item bookings">
+                                        <div class="utf_list_box_listing_item-img"><img src="images/blog/commentpp2.jpg" alt=""></div>
+                                        <div class="utf_list_box_listing_item_content">
+                                            <div class="inner">
+                                                <h3>William Ho <span class="utf_booking_listing_status">Approved</span></h3>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Item:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li>Pomona Home</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Start Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">24 November 2022 at 12:00 am</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>End Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">23 November 2023 at 12:00 pm</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Details:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">1 year lease</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Email Address:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">willho@gmail.com</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Phone Number:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">743-543-9845</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Price:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">$ 540/month</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="utf_approved_booking_listing">
+                                    <div class="utf_list_box_listing_item bookings">
+                                        <div class="utf_list_box_listing_item-img"><img src="images/blog/commentpp3.jpg" alt=""></div>
+                                        <div class="utf_list_box_listing_item_content">
+                                            <div class="inner">
+                                                <h3>Gigi Bee <span class="utf_booking_listing_status">Approved</span></h3>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Item:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li>Claremont Home</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Start Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">18 November 2022 at 12:00 am</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>End Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">19 May 2023 at 12:00 pm</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Details:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">6 month lease</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Email Address:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">gbee@gmail.com</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Phone Number:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">675-945-4387</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Price:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">$ 969/month</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="utf_canceled_booking_listing">
+                                    <div class="utf_list_box_listing_item bookings">
+                                        <div class="utf_list_box_listing_item-img"><img src="images/blog/author1.jpg" alt=""></div>
+                                        <div class="utf_list_box_listing_item_content">
+                                            <div class="inner">
+                                                <h3>Francis Burton <span class="utf_booking_listing_status">Canceled</span></h3>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Item:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li>Chase Ave Apartment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Start Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">18 December 2022 at 12:00 am</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>End Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">19 December 2023 at 12:00 pm</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Details:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">1 year lease</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Email Address:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">jmike@gmail.com</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Phone Number:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">543-796-5093</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Price:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">$ 1199/month</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="utf_pending_booking_listing">
+                                    <div class="utf_list_box_listing_item bookings">
+                                        <div class="utf_list_box_listing_item-img"><img src="images/Index_img/reviewpp2.jpg" alt=""></div>
+                                        <div class="utf_list_box_listing_item_content">
+                                            <div class="inner">
+                                                <h3>Bob Johnson <span class="utf_booking_listing_status pending">Pending</span><span class="utf_booking_listing_status unpaid">Unpaid</span></h3>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Item:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li>DTLA Home</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Start Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">01 January 2022 at 12:00 am</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>End Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">02 January 2023 at 12:00 pm</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Details:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">1 year lease</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Email Address:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">bjohnson@gmail.com</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Phone Number:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">320-604-7782</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Price:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">$ 1899/month</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-to-right"> <a href="#" class="button gray reject"><i class="sl sl-icon-close"></i> Reject</a> <a href="#" class="button gray approve"><i class="sl sl-icon-check"></i> Approve</a> </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="utf_dashboard_list_box margin-top-0">
+                            <div class="sort-by my_sort_by">
+                                <div class="utf_sort_by_select_item">
+                                    <select data-placeholder="All Listing" class="utf_chosen_select_single">
+                                        <option>All Listing</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <h4>Recent Bookings</h4>
+                            <ul>
+                                <li class="utf_approved_booking_listing">
+                                    <div class="utf_list_box_listing_item bookings">
+                                        <div class="utf_list_box_listing_item-img"><img src="images/Index_img/reviewpp.jpg" alt=""></div>
+                                        <div class="utf_list_box_listing_item_content">
+                                            <div class="inner">
+                                                <h3>Francis Burton <span class="utf_booking_listing_status">Approved</span></h3>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Item:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li>DTLA 1 Bed Apartment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Start Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">18 October 2021 at 12:00 am</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>End Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">19 October 2022 at 12:00 pm</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Details:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">1 year lease</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Email Address:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">fburton@gmail.com</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Phone Number:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">642-526-6675</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Price:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">$ 1799/month</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="utf_approved_booking_listing">
+                                    <div class="utf_list_box_listing_item bookings">
+                                        <div class="utf_list_box_listing_item-img"><img src="images/blog/commentpp4.jpg" alt=""></div>
+                                        <div class="utf_list_box_listing_item_content">
+                                            <div class="inner">
+                                                <h3>Shi Woo <span class="utf_booking_listing_status">Approved</span></h3>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Item:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li>Grand Ave Apartment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Start Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">18 November 2022 at 12:00 am</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>End Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">19 November 2022 at 12:00 pm</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Details:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">1 year lease</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Email Address:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">swoo@gmail.com</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Phone Number:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">527-645-3467</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Price:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">$ 1499/month</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-to-right"> <a href="#" class="button gray reject"><i class="sl sl-icon-close"></i> Cancel</a> </div>
+                                </li>
+                                <li class="utf_canceled_booking_listing">
+                                    <div class="utf_list_box_listing_item bookings">
+                                        <div class="utf_list_box_listing_item-img"><img src="images/blog/commentpp5.jpg" alt=""></div>
+                                        <div class="utf_list_box_listing_item_content">
+                                            <div class="inner">
+                                                <h3>Josh Colly <span class="utf_booking_listing_status">Canceled</span></h3>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Item:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li>Rode Ave Co-Ed bedroom</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Start Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">18 April 2021 at 12:00 am</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>End Date:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">19 April 2022 at 12:00 pm</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Booking Details:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">1 year lease</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Email Address:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">jcolly@gmail.com</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Phone Number:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">396-528-2522</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="utf_inner_booking_listing_list">
+                                                    <h5>Price:-</h5>
+                                                    <ul class="utf_booking_listing_list">
+                                                        <li class="highlighted">$ 1599/month</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Body End-->
+        <!-- Footer Start -->
+        <div id="footer" class="footer_sticky_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <h4>My Account</h4>
+                        <ul class="social_footer_link">
+                            <li><a href="Dashboard.html">Dashboard</a></li>
+                            <li><a href="Dashboard_profile.html">Profile</a></li>
+                            <li><a href="Listings.html">Listing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <h4>Pages</h4>
+                        <ul class="social_footer_link">
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="HIW.html">How It Work</a></li>
+                            <li><a href="Privacy_Policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <h4>Help</h4>
+                        <ul class="social_footer_link">
+                            
+                            <li><a href="Addlistings.html">Add Listing</a></li>
+                            <li><a href="Contact_Us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer_copyright_part">Copyright © 2022 All Rights Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+    <!-- Scripts -->
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/chosen.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/rangeslider.min.js"></script>
+    <script src="scripts/magnific-popup.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/mmenu.js"></script>
+    <script src="scripts/tooltips.min.js"></script>
+    <script src="scripts/color_switcher.js"></script>
+    <script src="scripts/jquery_custom.js"></script>
+</body>
+</html>
